@@ -1,0 +1,824 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 722592083,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SmartBearSteps.userIsOn(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7650227667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SmartBearSteps.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Validate “Web Orders” menu items",
+        "description": "",
+        "id": "validate-smartbearsoftware-website;validate-“web-orders”-menu-items",
+        "after": [
+          {
+            "result": {
+              "duration": 119534583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 400226708,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enters username as \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.userEntersUsernameAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181912625,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enters password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.userEntersPasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1153817541,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "SmartBearSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22679000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user should be routed to \"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "SmartBearSteps.userShouldBeRoutedTo(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 115702791,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "validate below menu items are displayed",
+            "match": {
+              "location": "SmartBearSteps.validateBelowMenuItemsAreDisplayed(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "View all orders",
+                  "View all products",
+                  "Order"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 583748333,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SmartBearSteps.userIsOn(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5341441000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SmartBearSteps.setup()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Validate “Check All” and “Uncheck All” links",
+        "description": "",
+        "id": "validate-smartbearsoftware-website;validate-“check-all”-and-“uncheck-all”-links",
+        "after": [
+          {
+            "result": {
+              "duration": 91456166,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 280867500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user enters username as \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.userEntersUsernameAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 151509833,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user enters password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.userEntersPasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1197689375,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "SmartBearSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9142084,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user should be routed to \"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "SmartBearSteps.userShouldBeRoutedTo(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 240168166,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user clicks on \"Check All\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Check All\"",
+                  "offset": 15
+                }
+              ],
+              "location": "SmartBearSteps.userClicksOnButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 214486000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "all rows should be checked",
+            "match": {
+              "location": "SmartBearSteps.allRowsShouldBeChecked()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109206458,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user clicks on \"Uncheck All\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Uncheck All\"",
+                  "offset": 15
+                }
+              ],
+              "location": "SmartBearSteps.userClicksOnButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 191088792,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "all rows should be unchecked",
+            "match": {
+              "location": "SmartBearSteps.allRowsShouldBeUnchecked()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 785243708,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SmartBearSteps.userIsOn(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4825843000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SmartBearSteps.setup()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Validate adding new order",
+        "description": "",
+        "id": "validate-smartbearsoftware-website;validate-adding-new-order",
+        "after": [
+          {
+            "result": {
+              "duration": 145529875,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 285089583,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user enters username as \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.userEntersUsernameAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182203958,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user enters password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.userEntersPasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1065531208,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "SmartBearSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17133625,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user should be routed to \"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "SmartBearSteps.userShouldBeRoutedTo(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 419703833,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user clicks on \"Order\" menu item",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order\"",
+                  "offset": 15
+                }
+              ],
+              "location": "SmartBearSteps.userClicksOnMenuItem(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 212279416,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user selects \"FamilyAlbum\" as product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FamilyAlbum\"",
+                  "offset": 13
+                }
+              ],
+              "location": "SmartBearSteps.userSelectsAsProduct(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50832292,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user enters 2 as quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "SmartBearSteps.userEntersAsQuantity(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 275017292,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user enters all address information",
+            "match": {
+              "location": "SmartBearSteps.userEntersAllAddressInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3149093708,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user enters all payment information",
+            "match": {
+              "location": "SmartBearSteps.userEntersAllPaymentInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3107189917,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user clicks on “Process” button",
+            "match": {
+              "location": "SmartBearSteps.userClicksOnProcessButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 370936250,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user clicks on \"View all orders\" menu item",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"View all orders\"",
+                  "offset": 15
+                }
+              ],
+              "location": "SmartBearSteps.userClicksOnMenuItem(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 867168209,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user should see their order displayed in the \"List of All Orders\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"List of All Orders\"",
+                  "offset": 45
+                }
+              ],
+              "location": "SmartBearSteps.userShouldSeeTheirOrderDisplayedInTheTable(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3342519958,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "validate all information entered displayed correct with the order",
+            "match": {
+              "location": "SmartBearSteps.validateAllInformationEnteredDisplayedCorrectWithTheOrder()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 507679083,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SmartBearSteps.userIsOn(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4954137125,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SmartBearSteps.setup()"
+            }
+          }
+        ],
+        "line": 57,
+        "name": "Validate “Delete Selected” button",
+        "description": "",
+        "id": "validate-smartbearsoftware-website;validate-“delete-selected”-button",
+        "after": [
+          {
+            "result": {
+              "duration": 110500917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 286014541,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user enters username as \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.userEntersUsernameAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 153059583,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user enters password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.userEntersPasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1320051958,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "SmartBearSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13744125,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user should be routed to \"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "SmartBearSteps.userShouldBeRoutedTo(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49492334,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user clicks on \"Check All\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Check All\"",
+                  "offset": 15
+                }
+              ],
+              "location": "SmartBearSteps.userClicksOnButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1849556625,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user clicks on \"Delete Selected\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Delete Selected\"",
+                  "offset": 15
+                }
+              ],
+              "location": "SmartBearSteps.userClicksOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10037694333,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "validate all orders are deleted from the \"List of All Orders\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"List of All Orders\"",
+                  "offset": 41
+                }
+              ],
+              "location": "SmartBearSteps.validateAllOrdersAreDeletedFromThe(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61839750,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "validate user sees \"List of orders is empty. In order to add new order use this link.\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"List of orders is empty. In order to add new order use this link.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "SmartBearSteps.validateUserSeesMessage(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate smartbearSoftware website",
+    "description": "",
+    "id": "validate-smartbearsoftware-website",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/smartbear.feature",
+    "tags": []
+  }
+]
