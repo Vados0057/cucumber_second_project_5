@@ -361,8 +361,10 @@ formatter.match({
   "location": "SmartBearSteps.validateAllInformationEnteredDisplayedCorrectWithTheOrder()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c02/2[7]/2023\u003e but was:\u003c02/2[8]/2023\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat steps.SmartBearSteps.validateAllInformationEnteredDisplayedCorrectWithTheOrder(SmartBearSteps.java:225)\n\tat ✽.validate all information entered displayed correct with the order(src/test/resources/features/smartbear.feature:54)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });

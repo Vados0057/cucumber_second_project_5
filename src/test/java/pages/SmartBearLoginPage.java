@@ -6,7 +6,7 @@ import utils.Driver;
 
 public class SmartBearLoginPage {
 
-    public SmartBearLoginPage(){
+    public SmartBearLoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

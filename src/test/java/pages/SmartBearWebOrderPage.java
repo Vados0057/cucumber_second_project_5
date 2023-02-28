@@ -59,15 +59,6 @@ public class SmartBearWebOrderPage {
     @FindBy(id = "ctl00_MainContent_fmwOrder_TextBox1")
     public WebElement expirationDate;
 
-    public String createExpirationDate(int month, int year){
-        String expirationDate;
-        if (month < 10){
-            expirationDate = "0" + month + "/" + year;
-        }
-        else expirationDate = month + "/" + year;
-        return expirationDate;
-    }
-
     @FindBy(id = "ctl00_MainContent_fmwOrder_InsertButton")
     public WebElement processButton;
 

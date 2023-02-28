@@ -13,9 +13,7 @@ import utils.Driver;
 import utils.RandomNumberGenerator;
 import utils.Waiter;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.text.spi.DateFormatProvider;
 import java.util.Calendar;
 import java.util.List;
 
@@ -173,10 +171,20 @@ public class SmartBearSteps {
 
     String cardNumber = String.valueOf(faker.number().randomNumber(16, true));
 
-    int month = RandomNumberGenerator.getARandomNumber(1, 12);
-    int year = RandomNumberGenerator.getARandomNumber(24, 30);
-    String cardExpDate = "12/25";
+    int month = RandomNumberGenerator.getARandomNumber(1,12);
+    int year = RandomNumberGenerator.getARandomNumber(25,30);
+    String cardExpDate;
 
+    {
+        if (month < 10){
+            cardExpDate = "0" + month + "/" + year;
+        }
+        else cardExpDate = "" + month + "/" + year;
+    }
+
+//    Date date = new Date();
+//    SimpleDateFormat sdf = new SimpleDateFormat("MM/yy");
+//    String strDate = sdf.format(date);
 
 
     @And("user enters all payment information")
@@ -196,17 +204,18 @@ public class SmartBearSteps {
     @Then("user should see their order displayed in the {string} table")
     public void userShouldSeeTheirOrderDisplayedInTheTable(String tableHeader) {
         Assert.assertEquals(smartBearWebOrderPage.header.getText(), tableHeader);
-        for (int i = 0; i < smartBearWebOrderPage.addedOrder.size()-1; i++) {
+        for (int i = 0; i < smartBearWebOrderPage.addedOrder.size() - 1; i++) {
             Assert.assertTrue(smartBearWebOrderPage.addedOrder.get(i).isDisplayed());
         }
     }
-    String date = new SimpleDateFormat("MM/dd/yyyy").format(Calendar.getInstance().getTime());
-    String[] order = {"", name, "FamilyAlbum", "2", date, address, city, state, zip, cardTypeString, cardNumber, cardExpDate, "" };
+
+    String date1 = new SimpleDateFormat("MM/dd/yyyy").format(Calendar.getInstance().getTime());
+    String[] order = {"", name, "FamilyAlbum", "2", date1, address, city, state, zip, cardTypeString, cardNumber, cardExpDate, ""};
 
     @And("validate all information entered displayed correct with the order")
     public void validateAllInformationEnteredDisplayedCorrectWithTheOrder() {
-        for (int i = 1; i < smartBearWebOrderPage.addedOrder.size()-1; i++) {
-           Assert.assertEquals(order[i], smartBearWebOrderPage.addedOrder.get(i).getText());
+        for (int i = 1; i < smartBearWebOrderPage.addedOrder.size() - 1; i++) {
+            Assert.assertEquals(order[i], smartBearWebOrderPage.addedOrder.get(i).getText());
         }
         Waiter.pause(3);
     }
