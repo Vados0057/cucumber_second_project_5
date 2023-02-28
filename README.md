@@ -10,5 +10,5 @@ The project also contains a utill package that contains very useful methods such
  - Driver
  - Waiter
  
-The project is configured to execute **@Smoke** and **@Regression** Suites with the help of maven commands (mvn test -DCucumber.options="--tags @Regression" or mvn test -DCucumber.options="--tags @Smoke"). The results will be attached below.
+The project is configured to execute **@Smoke** and **@Regression** Suites with the help of maven commands (mvn test -DCucumber.options="--tags @Regression" or mvn test -DCucumber.options="--tags @Smoke"). 
 
